@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Ultra_RES 실행</title>
+  <script src="https://unpkg.com/ruffle-mirror@latest/ruffle.js"></script>
+  <style>
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container"></div>
+  <script>
+    const embed = document.createElement("embed");
+    embed.src = "Ultra_RES.swf"; // 상대 경로!
+    embed.width = 800;
+    embed.height = 600;
+    embed.type = "application/x-shockwave-flash";
+    document.getElementById("game-container").appendChild(embed);
+  </script>
+</body>
+</html>
